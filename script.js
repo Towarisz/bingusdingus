@@ -1,3 +1,7 @@
-while(true){
-let e=0;setInterval(()=>document.querySelectorAll("img").forEach(d=>d.style.width=`${e+=0.01px}`),100)
-}
+
+let e=100;
+setInterval(()=>{
+  document.querySelectorAll("*").forEach(d=>d.style.transform=`scale(${e+=1}%,${e}%)`)}
+            if(e>250) e=100;
+            ,100)
+
